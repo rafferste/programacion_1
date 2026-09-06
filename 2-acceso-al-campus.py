@@ -34,8 +34,11 @@ else:
                 clave_nueva = input("Clave nueva: ")
                 confirmar_clave = input("Repita la clave: ")
 
-                while clave_nueva != confirmar_clave:
-                    print("Error: Las claves no coinciden!")
+                while clave_nueva != confirmar_clave or len(clave_nueva) < 6:
+                    if len(clave_nueva) < 6:
+                        print("Error: Mínimo 6 caracteres.")
+                    else:
+                        print("Error: Las claves no coinciden!")
                     clave_nueva = input("Clave nueva: ")
                     confirmar_clave = input("Repita la clave: ")
                 
@@ -43,3 +46,10 @@ else:
 
             case "3":
                 print("Un programador de computadoras es un creador de universos para los cuales él es el único legislador... Ningún dramaturgo, ningún director de escena, ningún maestro constructor, se enfrentó jamás a tal falta de limitaciones")
+
+            case "4":
+                pass
+
+            case _:
+                print("Error: Ingrese un numero valido")
+    
