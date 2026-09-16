@@ -34,14 +34,14 @@ match mayor_amplitud[0]:
     case 0:
         print("Dia: Lunes")
     case 1:
-            print("Dia: Martes")
+        print("Dia: Martes")
     case 2:
-            print("Dia: Miercoles")
+        print("Dia: Miercoles")
     case 3:
-            print("Dia: Jueves")
+        print("Dia: Jueves")
     case 4:
-            print("Dia: Viernes")
+        print("Dia: Viernes")
     case 5:
-            print("Dia: Sabado")
+        print("Dia: Sabado")
     case 6:
-            print("Dia: Domingo")
+        print("Dia: Domingo")
